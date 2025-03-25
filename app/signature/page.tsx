@@ -5,8 +5,6 @@ import SignatureCanvas from "react-signature-canvas";
 import { saveAs } from "file-saver";
 import { Box, Text, VStack, HStack, Button, Center } from "@chakra-ui/react";
 
-import * as styles from 
-
 const Home = () => {
   const sigCanvas = useRef<SignatureCanvas>(null);
 
