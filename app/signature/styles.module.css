@@ -1,0 +1,11 @@
+.sigCanvas {
+  width: 680px;
+  height: 170px;
+}
+
+@media (max-width: 768px) {
+  .sigCanvas {
+    width: 340px;
+    height: 100px;
+  }
+}

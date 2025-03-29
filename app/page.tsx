@@ -4,7 +4,7 @@ import { Button, Center } from "@chakra-ui/react";
 
 export default function Page() {
   return (
-    <Center h="100vh" w="100vw">
+    <Center h="100vh" w="100vw" bg="gray.200">
       <Button
         as={Link}
         href="/signature"
