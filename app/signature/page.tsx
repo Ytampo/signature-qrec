@@ -50,15 +50,15 @@ const Sign = () => {
     }
   };
 
-  const saveGoogleDocs = () => {
-    if (sigCanvas.current) {
-      const signatureData = sigCanvas.current
-        .getTrimmedCanvas()
-        .toDataURL("image/png");
+  // const saveGoogleDocs = () => {
+  //   if (sigCanvas.current) {
+  //     const signatureData = sigCanvas.current
+  //       .getTrimmedCanvas()
+  //       .toDataURL("image/png");
 
-      modifyGoogleDocs(inputValue, signatureData);
-    }
-  };
+  //     modifyGoogleDocs(inputValue, signatureData);
+  //   }
+  // };
 
   return (
     <Box>
