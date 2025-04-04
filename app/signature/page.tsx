@@ -13,8 +13,8 @@ import {
 } from "@chakra-ui/react";
 import SignatureCanvas from "react-signature-canvas";
 import * as styles from "./styles.module.css";
-import modifyPdf from "../api/editPdf/route";
-import modifyDocs from "../api/editDocs/route";
+import modifyPdf from "../../features/pdf/editPdf";
+import modifyDocs from "../../features/docs/editDocs";
 
 const Sign = () => {
   const sigCanvas = useRef<SignatureCanvas>(null);
