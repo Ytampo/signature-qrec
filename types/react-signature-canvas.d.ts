@@ -1,5 +1,5 @@
-declare module 'react-signature-canvas' {
-  import { Component } from 'react';
+declare module "react-signature-canvas" {
+  import { Component } from "react";
 
   interface SignatureCanvasProps {
     penColor?: string;
@@ -10,5 +10,6 @@ declare module 'react-signature-canvas' {
   export default class SignatureCanvas extends Component<SignatureCanvasProps> {
     clear(): void;
     toDataURL(): string;
+    getTrimmedCanvas(): canvas;
   }
 }
