@@ -71,5 +71,8 @@ export default async function modifyPdf(fileName: string, signImgUrl: string) {
 
   const pdfBytes = await pdfDoc.save();
 
-  download(pdfBytes, fileName + ".pdf", "application/pdf");
+  // Uint8Array を Blob に変換
+  const pdfBlob = new Blob([pdfBytes], { type: "application/pdf" });
+
+  download(pdfBlob, fileName + ".pdf", "application/pdf");
 }
