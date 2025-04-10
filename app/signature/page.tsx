@@ -12,7 +12,7 @@ import {
   InputRightAddon,
 } from "@chakra-ui/react";
 import SignatureCanvas from "react-signature-canvas";
-import * as styles from "./styles.module.css";
+import styles from "./styles.module.css";
 import modifyPdf from "../../features/pdf/editPdf";
 import modifyDocs from "../../features/docs/editDocs";
 
@@ -108,7 +108,7 @@ const Sign = () => {
         <Box rounded={"xl"} bg={"gray.50"}>
           <SignatureCanvas
             penColor="black"
-            canvasProps={{ className: styles.sigCanvas }}
+            canvasProps={{ className: styles.sigCanvasSize }}
             maxWidth={2}
             minWidth={1}
             ref={sigCanvas}

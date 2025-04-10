@@ -5,6 +5,8 @@ declare module "react-signature-canvas" {
     penColor?: string;
     canvasProps?: object;
     clearOnResize?: boolean;
+    maxWidth?: int;
+    minWidth?: int;
   }
 
   export default class SignatureCanvas extends Component<SignatureCanvasProps> {
