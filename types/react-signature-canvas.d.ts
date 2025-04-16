@@ -10,5 +10,8 @@ declare module 'react-signature-canvas' {
   export default class SignatureCanvas extends Component<SignatureCanvasProps> {
     clear(): void;
     toDataURL(): string;
+    fromDataURL(dataURL: string, options?: object): void;
+    getCanvas(): HTMLCanvasElement;
+    getTrimmedCanvas(): HTMLCanvasElement;
   }
 }

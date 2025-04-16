@@ -11,13 +11,14 @@ import {
   InputGroup,
   InputRightAddon,
 } from "@chakra-ui/react";
-import SignatureCanvas from "react-signature-canvas";
-import * as styles from "./styles.module.css";
+import styles from "./styles.module.css";
 import modifyPdf from "../../features/pdf/editPdf";
 import modifyDocs from "../../features/docs/editDocs";
 
 const Sign = () => {
-  const sigCanvas = useRef<SignatureCanvas>(null);
+  // eslint-disable-next-line
+  const { SignatureCanvas } = require("react-signature-canvas");
+  const sigCanvas = useRef<typeof SignatureCanvas>(null);
   const [inputValue, setInputValue] = useState("");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
