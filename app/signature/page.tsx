@@ -109,7 +109,7 @@ const Sign = () => {
         <Box rounded={"xl"} bg={"gray.50"}>
           <SignatureCanvas
             penColor="black"
-            canvasProps={{ className: styles.sigCanvas }}
+            canvasProps={{ className: styles.sigCanvasSize }}
             maxWidth={2}
             minWidth={1}
             ref={sigCanvas}
